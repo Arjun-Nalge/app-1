@@ -6,25 +6,25 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                build()
+                buildApp()
             }
         }
 
         stage('Test') {
             steps {
-                test()
+                testApp()
             }
         }
 
         stage('Scan') {
             steps {
-                scan()
+                scanApp()
             }
         }
 
         stage('Deploy') {
             steps {
-                deploy()
+                deployApp()
             }
         }
     }
